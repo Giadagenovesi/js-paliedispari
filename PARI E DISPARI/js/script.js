@@ -30,11 +30,9 @@ let winner = "";
 if(userChoise === resultNumber) {
     winner = ("Complimenti hai vinto");
 } else {
-    winner =("Ritenta sartai più fortunato");
-    
+    winner =("Ritenta sartai più fortunato");  
 }
 console.log(winner);
-
 
 // FUNCTIONS
 
@@ -48,7 +46,6 @@ function randomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 
 }
-
 
 /**
  * Description: Controlla se il numero è pari o dispari
