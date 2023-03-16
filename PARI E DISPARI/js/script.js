@@ -26,7 +26,14 @@ if(resultNumber === "dispari") {
 }
 
 // Dichiariamo chi ha vinto.
-
+let winner = "";
+if(userChoise === resultNumber) {
+    winner = ("Complimenti hai vinto");
+} else {
+    winner =("Ritenta sartai più fortunato");
+    
+}
+console.log(winner);
 
 
 // FUNCTIONS
