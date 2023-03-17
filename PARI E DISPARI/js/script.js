@@ -28,12 +28,17 @@ if(resultNumber === "dispari") {
 // Dichiariamo chi ha vinto.
 let winner = "";
 if(userChoise === resultNumber) {
-    winner = ("Complimenti hai vinto");
+    winner = "Complimenti hai vinto";
 } else {
-    winner =("Ritenta sartai più fortunato");  
+    winner ="Ritenta sartai più fortunato";  
 }
 console.log(winner);
 
+//OUTPUT
+document.getElementById("result").innerHTML = winner;
+
+
+//////////////////////////////////////////////////////////////////////////////////
 // FUNCTIONS
 
 /**
@@ -44,13 +49,12 @@ console.log(winner);
  */
 function randomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
-
 }
 
 /**
  * Description: Controlla se il numero è pari o dispari
  * @param {number} numberToCheck
- * @returns {string} "pari" se è pari "dispari" se è dispari
+ * @returns {string} "pari" se il risultato è pari "dispari" se il risultato è dispari
  */
 function isOddOrEven(numberToCheck) {
     let result;
